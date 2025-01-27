@@ -62,3 +62,41 @@ a {
   background-color: #000000;
   color: #ffffff;
 }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  /* background-color: #ffffff; */
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: #333;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.hero-sec-login {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.hero-sec-login:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

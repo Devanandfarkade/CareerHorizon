@@ -44,12 +44,12 @@ body {
 }
 
 .login-container input:focus {
-  border-color: #e23744;
+  border-color: #000000;
 }
 
 .login-btn {
-  background-color: #e23744;
-  color: #ffffff;
+  /* background-color: #e23744; */
+  color: #000000;
   border: none;
   width: 100%;
   margin-top: 10px;
@@ -61,7 +61,8 @@ body {
 }
 
 .login-btn:hover {
-  background-color: #d12d3a;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .login-container .links {
