@@ -17,14 +17,12 @@ a {
   text-decoration: none;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
-
   justify-content: space-between;
   color: black;
   align-items: center;
-  background-color: #d6c0b3;
+  /* background-color: #d6c0b3; */
   padding: 15px 20px;
   position: sticky;
   top: 0;
@@ -36,6 +34,10 @@ a {
   font-size: 1.5rem;
   color: black;
   font-weight: bold;
+}
+
+.navbar .logo:hover {
+  transform: scaleY(1.2);
 }
 
 .navbar .nav-items a {
@@ -57,6 +59,6 @@ a {
 }
 
 .navbar .login-btn a:hover {
-  background-color: #e4e0e1;
-  color: black;
+  background-color: #000000;
+  color: #ffffff;
 }
