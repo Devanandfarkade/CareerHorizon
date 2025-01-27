@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  .register{
+    font-size: 1.5rem;
+    
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+  
+  /* Form Card */
+  .form-card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+   
+  }
+  
+  .form-card p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Form */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    color: #666;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: black;
+    color: #666;
+  }
+  
+  /* Button */
+  .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+
+    background-color: #f9f9f9;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: black;
+    color: white;
+  }
+  .links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #e23744;
+    transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: #e23744;
+    text-decoration: underline;
+}
