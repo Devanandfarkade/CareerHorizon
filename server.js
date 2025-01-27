@@ -4,6 +4,8 @@ import express from "express";
 import dotenv from "dotenv";
 import colors from "colors";
 import connectDB from "./config/db.js";
+import path from "path";
+import { fileURLToPath } from "url";
 
 //config
 dotenv.config();
@@ -13,9 +15,14 @@ connectDB();
 //rest object
 const app = express();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "public")));
+
 //routes
 app.get("/", (req, res) => {
-  res.send("<h1>Node Server running on port 8080</h1>");
+  res.sendFile(__dirname, "public", "index.html");
 });
 
 //port
