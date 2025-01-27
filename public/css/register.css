@@ -3,7 +3,6 @@ body {
     font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
-    background: whitesmoke;
     font-weight: 400;
     font-style: normal;
     background-color: #f9f9f9;
@@ -104,11 +103,11 @@ body {
 .links a {
     text-decoration: none;
     font-size: 14px;
-    color: #e23744;
+    color: #666;
     transition: color 0.3s ease-in-out;
 }
 
 .links a:hover {
-    color: #e23744;
+    color: #666;
     text-decoration: underline;
 }
