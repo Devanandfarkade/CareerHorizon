@@ -1,25 +1,10 @@
 /* General Styles */
 body {
-<<<<<<< HEAD
-  font-family: "Poppins", serif;
-  margin: 0;
-  padding: 0;
-  /* background: whitesmoke; */
-  font-weight: 400;
-  font-style: normal;
-  background-color: #f9f9f9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-.register {
-  font-size: 1.5rem;
-}
-=======
+
     font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
+    background: whitesmoke;
     font-weight: 400;
     font-style: normal;
     background-color: #f9f9f9;
@@ -99,8 +84,8 @@ body {
   .btn {
     padding: 10px 15px;
     font-size: 16px;
->>>>>>> 7ebeee71c3fcf42f1bd4fd0fe9f3696f53a5af8b
 
+  }
 .container {
   width: 90%;
   max-width: 400px;
@@ -182,7 +167,7 @@ input:focus {
 }
 
 .links a {
-<<<<<<< HEAD
+
   text-decoration: none;
   font-size: 14px;
   color: #666;
@@ -191,7 +176,7 @@ input:focus {
 
 .links a:hover {
   text-decoration: underline;
-=======
+
     text-decoration: none;
     font-size: 14px;
     color: #666;
@@ -201,5 +186,5 @@ input:focus {
 .links a:hover {
     color: #666;
     text-decoration: underline;
->>>>>>> 7ebeee71c3fcf42f1bd4fd0fe9f3696f53a5af8b
+
 }
