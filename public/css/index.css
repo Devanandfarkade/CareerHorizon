@@ -103,6 +103,22 @@ body {
   border-radius: 50px;
   font-family: monospace;
   font-weight: 400;
+  text-align: center;
+  animation: typing 3s steps(40, end) forwards, blink infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .title {
@@ -162,6 +178,7 @@ body {
 }
 span {
   color: #1782cf;
+  font-family: "Poppins", serif;
 }
 
 .star {
