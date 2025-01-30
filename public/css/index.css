@@ -25,7 +25,7 @@ body {
 #scroll-progress-bar {
   height: 100%;
   width: 0%; /* Initially set to 0% */
-  background-color: #4caf50; /* Color for the progress bar */
+  background-color: #1782cf; /* Color for the progress bar */
   transition: width 0.1s ease-out; /* Smooth transition effect */
 }
 
@@ -34,9 +34,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* background-color: rgb(245, 245, 245); */
+  background-color: #ffffff;
   width: 100%;
   /* background-color: white; */
+  position: sticky;
+  top: 0;
 }
 
 .logo h5 {
