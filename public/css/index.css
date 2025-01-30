@@ -171,10 +171,10 @@ body {
   font-size: 1rem;
   margin-right: 20px;
 }
-.biolog a:hover{
-  background-color:#1782cf; 
-   color: white;
-   text-decoration: none;
+.biolog a:hover {
+  background-color: #1782cf;
+  color: white;
+  text-decoration: none;
 }
 
 .whyustitle {
@@ -204,10 +204,10 @@ body {
 .intern:hover,
 .career-gui:hover,
 .reg-log:hover {
-  background-color: #4c7faf; 
-  color: white; 
+  background-color: #4c7faf;
+  color: white;
   cursor: pointer;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 span {
@@ -281,7 +281,6 @@ span {
   transform: translateY(-50%);
 }
 
-
 /* How It Works Section */
 .how-it-works {
   margin-top: 100px;
@@ -314,7 +313,6 @@ span {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-
 }
 
 /* Card Styling */
@@ -328,20 +326,19 @@ span {
   transform: translateY(30px);
   opacity: 10;
   /* animation: fadeInUp 1s ease-in-out forwards; */
-  transition: transform 0.3s cubic-bezier(0.51, -0.14, 0.22, 1.09), box-shadow 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.51, -0.14, 0.22, 1.09),
+    box-shadow 0.3s ease;
   position: relative;
 }
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  
 }
 
 /* Colors for Different Cards */
 .purple {
   background: #f0e9ff;
- 
 }
 
 .purple.h3 {
@@ -387,11 +384,10 @@ span {
   }
 }
 
-
 .contact-form-container {
   max-width: 600px; /* Adjust as needed */
   margin: 0 auto; /* Center the form */
-  background: #f9f9f9; /* Optional: Add background */
+  background: #f7fcff;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -425,7 +421,7 @@ span {
   border-radius: 4px;
   font-size: 16px;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 .input-group input:focus,
@@ -481,27 +477,24 @@ h2 {
 }
 
 .member {
-  
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.member.deva{
+.member.deva {
   background: #e9fff0;
 }
-.member.ram{
+.member.ram {
   background-color: #f0e9ff;
 }
-.member.abhi{
+.member.abhi {
   background-color: #ffe9f0;
-  
-  }
-  .member.amol{
- 
-    background-color: #ffe9db;
-    }
+}
+.member.amol {
+  background-color: #ffe9db;
+}
 
 .member:hover {
   transform: translateY(-8px);
@@ -535,7 +528,7 @@ h2 {
 }
 
 .linkedin-link:hover {
-  background-color:#1782cf; 
+  background-color: #1782cf;
   color: white;
   cursor: pointer;
 }
@@ -573,16 +566,14 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5px; 
-  background-color: #f3f3f3; 
-  z-index: 9999; 
+  height: 5px;
+  background-color: #f3f3f3;
+  z-index: 9999;
 }
-
 
 #scroll-progress-bar {
   height: 100%;
-  width: 0%; 
-  background-color: #72dc78; 
-  transition: width 0.1s ease-out; 
+  width: 0%;
+  background-color: #72dc78;
+  transition: width 0.1s ease-out;
 }
-
