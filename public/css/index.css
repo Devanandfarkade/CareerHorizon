@@ -10,6 +10,24 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+/* Style for the scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height of the progress bar */
+  background-color: #f3f3f3; /* Light background for the progress bar */
+  z-index: 9999; /* Ensure it stays on top of other elements */
+}
+
+/* Progress bar fill */
+#scroll-progress-bar {
+  height: 100%;
+  width: 0%; /* Initially set to 0% */
+  background-color: #4caf50; /* Color for the progress bar */
+  transition: width 0.1s ease-out; /* Smooth transition effect */
+}
 
 .navbar {
   display: flex;
@@ -182,6 +200,16 @@ body {
   font-size: 1.2rem;
   font-family: monospace;
 }
+.job:hover,
+.intern:hover,
+.career-gui:hover,
+.reg-log:hover {
+  background-color: #4c7faf; 
+  color: white; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
 span {
   color: #1782cf;
   font-family: "Poppins", serif;
@@ -539,3 +567,22 @@ h2 {
   color: #000000;
   text-align: center;
 }
+/*Scroll bar*/
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; 
+  background-color: #f3f3f3; 
+  z-index: 9999; 
+}
+
+
+#scroll-progress-bar {
+  height: 100%;
+  width: 0%; 
+  background-color: #72dc78; 
+  transition: width 0.1s ease-out; 
+}
+

@@ -29,5 +29,32 @@
         <a href="register.html">Don't have an account? Register now</a>
       </div>
     </div>
+    <script>
+       const form = document.getElementById('loginForm');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  const response = await fetch('/api/users/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email, password }),
+  });
+
+  const result = await response.json();
+  document.getElementById('response').textContent = result.message;
+
+  if (response.status === 200) {
+    setTimeout(() => {
+      window.location.href = 'index.html';  // Redirect to index page after login
+    }, 2000);
+  }
+});
+    </script>
   </body>
 </html>

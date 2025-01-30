@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="/css/register.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
     <div class="container">
-      <div class="form-card">
-        <h1 class="register">Register</h1>
-        <p>Join our <span> <b>Career Horizon</b></span> to unlock opportunities.</p>
-        <form action="#" method="POST" class="register-form">
-          <div class="form-group">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Full name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Phone number"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              placeholder="Confirm Password"
-              required
-            />
-          </div>
-          <button type="submit" class="btn">Register</button>
-
-          <div class="links">
-            <a href="login.html">Already have an account? Login</a>
-          </div>
+        <h2>Create an Account</h2>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
         </form>
-      </div>
+        <p id="response"></p>
     </div>
-  </body>
+
+    <script>
+const form = document.getElementById('registerForm');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    // Check if password and confirm password match
+    if (password !== confirmPassword) {
+        document.getElementById('response').textContent = 'Passwords do not match!';
+        document.getElementById('response').style.color = 'red';
+        return;
+    }
+
+    const response = await fetch('/api/users/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, phone, password }),
+    });
+
+    const result = await response.json();
+    document.getElementById('response').textContent = result.message;
+
+    // If registration is successful
+    if (response.status === 201) {
+        // Display success message and change color to green
+        document.getElementById('response').style.color = 'green';
+
+        // Clear form data after successful registration
+        form.reset();
+
+        // Redirect after 2 seconds
+        setTimeout(() => {
+            window.location.href = 'login.html';
+        }, 2000);
+
+        // Hide the success message after 3 seconds
+        setTimeout(() => {
+            document.getElementById('response').textContent = '';
+        }, 3000);
+    } else {
+        // If there is an error, keep the message in red color
+        document.getElementById('response').style.color = 'red';
+    }
+});
+
+    </script>
+</body>
 </html>

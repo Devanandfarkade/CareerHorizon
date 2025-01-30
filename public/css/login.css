@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #f7fcff;
+  background-color: #f9f9f9;
 }
 
 .login-container {
@@ -24,7 +24,6 @@ body {
 .login-container h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #1782cf;
 }
 
 .login-container p {
@@ -54,17 +53,18 @@ body {
   border: none;
   width: 100%;
   margin-top: 10px;
+  background-color: #f9f9f9;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
   background-color: #f9f9f9;
   font-size: 1rem;
   cursor: pointer;
-  border: 1px solid #1782cf;
+  transition: background-color 0.3s;
 }
 
 .login-btn:hover {
-  background-color: #1782cf;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .login-container .links {

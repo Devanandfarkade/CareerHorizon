@@ -1,37 +1,30 @@
-//imports
-//const express = require("express");
-import express from "express";
-import dotenv from "dotenv";
-import colors from "colors";
-import connectDB from "./config/db.js";
-import path from "path";
-import { fileURLToPath } from "url";
+const express = require('express');
+const bodyParser = require('body-parser');
+require('colors'); 
+const { connectDB } = require('./config/db'); 
+const userRoutes = require('./routes/userRoutes'); 
+require('dotenv').config(); 
 
-//config
-dotenv.config();
-
-connectDB();
-
-//rest object
 const app = express();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Middleware
+app.use(bodyParser.json());
+app.use(express.static('public')); 
 
-app.use(express.static(path.join(__dirname, "public")));
-
-//routes
-app.get("/", (req, res) => {
-  res.sendFile(__dirname, "public", "index.html");
+// Serve register.html on root URL
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/register.html'); 
 });
 
-//port
-const PORT = process.env.PORT || 8080;
+// Connect to MongoDB
+connectDB();
 
-//listen
+// Use user registration and login routes
+app.use('/api/users', userRoutes);
+
+// Start the server
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(
-    `Node server running in ${process.env.DEV_MODE} mode on port no ${PORT}`
-      .bgGreen.white
-  );
+    console.log(`Your Server running on port `.green + `${PORT}`.yellow);
+    console.log(`Visit: `.blue + `http://localhost:${PORT}`.cyan.underline);
 });
