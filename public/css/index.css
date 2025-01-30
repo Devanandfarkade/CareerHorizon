@@ -202,6 +202,7 @@ body {
   font-size: 1.2rem;
   font-family: monospace;
 }
+
 .job:hover,
 .intern:hover,
 .career-gui:hover,
@@ -211,6 +212,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 
 span {
   color: #1782cf;
@@ -389,7 +391,11 @@ span {
 .contact-form-container {
   max-width: 600px; /* Adjust as needed */
   margin: 0 auto; /* Center the form */
+
+  background: #f7fcff; /* Optional: Add background */
+
   background: #f7fcff;
+
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
