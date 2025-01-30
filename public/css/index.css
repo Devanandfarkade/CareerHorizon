@@ -200,8 +200,7 @@ body {
   font-size: 1.2rem;
   font-family: monospace;
 }
-<<<<<<< HEAD
-=======
+
 .job:hover,
 .intern:hover,
 .career-gui:hover,
@@ -211,7 +210,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
->>>>>>> 4acab97bd57ce370e73fcb74b212d8b2e303094a
+
 
 span {
   color: #1782cf;
@@ -390,11 +389,11 @@ span {
 .contact-form-container {
   max-width: 600px; /* Adjust as needed */
   margin: 0 auto; /* Center the form */
-<<<<<<< HEAD
+
   background: #f7fcff; /* Optional: Add background */
-=======
+
   background: #f7fcff;
->>>>>>> 4acab97bd57ce370e73fcb74b212d8b2e303094a
+
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
