@@ -203,15 +203,7 @@ body {
   font-family: monospace;
 }
 
-.job:hover,
-.intern:hover,
-.career-gui:hover,
-.reg-log:hover {
-  background-color: #4c7faf;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 
 
 span {
