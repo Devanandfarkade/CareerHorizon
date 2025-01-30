@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="/css/register.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
     <div class="container">
@@ -104,6 +107,7 @@ form.addEventListener('submit', async (e) => {
     if (response.status === 201) {
         // Display success message and change color to green
         document.getElementById('response').style.color = 'green';
+        //alert("Registration successfull!");
 
         // Clear form data after successful registration
         form.reset();
@@ -111,12 +115,12 @@ form.addEventListener('submit', async (e) => {
         // Redirect after 2 seconds
         setTimeout(() => {
             window.location.href = 'login.html';
-        }, 2000);
+        }, 0);
 
         // Hide the success message after 3 seconds
         setTimeout(() => {
             document.getElementById('response').textContent = '';
-        }, 3000);
+        }, 0);
     } else {
         // If there is an error, keep the message in red color
         document.getElementById('response').style.color = 'red';
