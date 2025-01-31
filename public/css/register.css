@@ -148,7 +148,8 @@ input:focus {
 
 .btn:hover {
   background-color: #1782cf;
-  color: white;
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 .links {
   margin-top: 20px;

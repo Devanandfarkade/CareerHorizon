@@ -1,32 +1,41 @@
 /* Basic Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fc;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    background-color: #f7fcff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .forgot-password-box {
     background-color: white;
     padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     max-width: 400px;
     width: 100%;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    /* font-size: 24px;
+    margin-bottom: 20px; */
+    font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1782cf;
 }
 
 p {
@@ -52,18 +61,22 @@ input[type="email"] {
 button {
     width: 96%;
     padding: 10px;
-    background-color: #f9f9f9;
-    border: none;
-    color: rgb(11, 11, 11);
+    border-radius: 10px;
+    background-color: #f7fcff;
+    border: 1px solid #1782cf;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s;
+    font-family: monospace;
 }
 
 button:hover {
-    background-color: #02030b;
+    background-color: #1782cf;
     color: white;
+    transition: all 0.3s ease-in-out;
+    font-family: monospace;
 }
 
 .message {
