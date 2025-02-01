@@ -42,19 +42,24 @@ body {
   top: 0;
 }
 
-.logo h5 {
-  font-size: 1.5rem;
-  /* font-family: monospace; */
-  cursor: pointer;
-  font-style: italic;
-  margin-left: 20px;
-  color: #1782cf;
+.logo img{
+  
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits well */
+    position: absolute;
+    left: 10px; /* Adjust spacing from the left */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centers the logo */
 }
-.logo h5:hover {
+
+
+/*.logo h5:hover {
   transform: scaleY(1.2);
   cursor: pointer;
 }
-
+*/
 .log-signbtn {
   display: flex;
   align-items: center;

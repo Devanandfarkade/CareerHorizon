@@ -32,3 +32,6 @@ window.onscroll = function () {
   document.getElementById("scroll-progress-bar").style.width =
     scrollPercentage + "%";
 };
+document.querySelector(".navbar-logo-img").addEventListener("animationiteration", function() {
+  this.style.animation = "none"; // Stops the animation after the first iteration
+});
