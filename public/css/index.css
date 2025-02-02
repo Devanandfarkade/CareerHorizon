@@ -42,18 +42,10 @@ body {
   top: 0;
 }
 
-.logo img{
-  
-    width: 200px; /* Adjust size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image fits well */
-    position: absolute;
-    left: 10px; /* Adjust spacing from the left */
-    top: 50%;
-    transform: translateY(-50%); /* Vertically centers the logo */
+.logo img {
+  width: 100px; /* Adjust size as needed */
+  height: 50px;
 }
-
 
 /*.logo h5:hover {
   transform: scaleY(1.2);
@@ -579,4 +571,61 @@ h2 {
   width: 0%;
   background-color: #72dc78;
   transition: width 0.1s ease-out;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.logo p {
+  color: #ffffff;
+  font-style: italic;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  display: block;
+}
+
+.social-links p {
+  text-align: left;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.linkedin a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.linkedin a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.copyright p {
+  color: #ffffff;
+}
+
+.coma {
+  color: #ffffff;
+}
+
+title {
+  background-color: #ffffff;
+  color: #1782cf;
 }
