@@ -35,3 +35,8 @@ window.onscroll = function () {
 document.querySelector(".navbar-logo-img").addEventListener("animationiteration", function() {
   this.style.animation = "none"; // Stops the animation after the first iteration
 });
+ 
+  const token = localStorage.getItem("token");
+  if (!token) {
+    window.location.href = "login.html"; // Redirect if not logged in
+  }

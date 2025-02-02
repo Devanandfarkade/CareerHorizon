@@ -30,31 +30,36 @@
       </div>
     </div>
     <script>
-       const form = document.getElementById('loginForm');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-
-  const response = await fetch('/api/users/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ email, password }),
-  });
-
-  const result = await response.json();
-  document.getElementById('response').textContent = result.message;
-
-  if (response.status === 200) {
-    setTimeout(() => {
-      window.location.href = 'index.html';  // Redirect to index page after login
-    }, 2000);
-  }
-});
+      const form = document.querySelector("form"); // Selects the login form
+    
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+    
+        const email = document.querySelector('input[name="emailid"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+    
+        const response = await fetch("/api/users/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        });
+    
+        const result = await response.json();
+        alert(result.message);
+    
+        if (response.status === 200) {
+          // ✅ Store JWT token in localStorage
+          localStorage.setItem("token", result.token);
+    
+          // ✅ Redirect to dashboard or home page after login
+          setTimeout(() => {
+            window.location.href = "dashboard.html";
+          }, 500);
+        }
+      });
     </script>
+    
   </body>
 </html>
