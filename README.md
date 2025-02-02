@@ -19,8 +19,8 @@ Install dependancies:
 7) npm i bcrypt
 
 Set up environment variables:
-PORT = 8080
-DEV_MODE = development
+PORT = 8080,
+DEV_MODE = development,
 MONGO_URI=your-mongodb-connection-string
 
 To run the application, just type:
