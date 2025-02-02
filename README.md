@@ -17,10 +17,11 @@ Install dependancies:
 5) npm i dotenv
 6) npm i mongoose
 7) npm i bcrypt
+8)npm install jsonwebtoken
 
 Set up environment variables:
-PORT = 8080
-DEV_MODE = development
+PORT = 8080,
+DEV_MODE = development,
 MONGO_URI=your-mongodb-connection-string
 
 To run the application, just type:
