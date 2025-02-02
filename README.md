@@ -17,6 +17,7 @@ Install dependancies:
 5) npm i dotenv
 6) npm i mongoose
 7) npm i bcrypt
+8)npm install jsonwebtoken
 
 Set up environment variables:
 PORT = 8080,
