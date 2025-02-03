@@ -635,3 +635,9 @@ title {
   background-color: #ffffff;
   color: #1782cf;
 }
+
+@media (max-width: 768px) {
+  .why-us {
+    flex-direction: column;
+  }
+}
