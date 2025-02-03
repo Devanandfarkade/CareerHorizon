@@ -216,5 +216,14 @@
         window.location.href = "login.html"; // Redirect if not logged in
       }
     </script>
+  
+<script>
+  // Prevent access to index.html if not logged in
+  if (!localStorage.getItem("token")) {
+    window.location.href = "index.html";
+  }
+</script>
+
+    
   </body>
 </html>
