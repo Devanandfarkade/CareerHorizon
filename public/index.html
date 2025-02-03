@@ -87,7 +87,16 @@
     </section>
 
     <div class="contact-form-container">
-      <form class="contact-form">
+      <form
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="3d9df3a0-51f2-4536-9c45-80bd84fd92e8"
+        />
         <h2>Contact Us</h2>
 
         <div class="input-group">
@@ -202,11 +211,10 @@
 
     <script src="/indexMain.js"></script>
     <script>
-  const token = localStorage.getItem("token");
-  if (!token) {
-    window.location.href = "login.html"; // Redirect if not logged in
-  }
-</script>
-
+      const token = localStorage.getItem("token");
+      if (!token) {
+        window.location.href = "login.html"; // Redirect if not logged in
+      }
+    </script>
   </body>
 </html>
