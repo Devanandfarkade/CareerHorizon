@@ -1,4 +1,5 @@
 # Kaam Dhanda
+
 Kaam Dhanda is a career-link-providing platform designed to help job seekers and students find relevant opportunities, including jobs and internships. The platform offers a seamless experience with user authentication, job listings, and internship postings, making it easier for individuals to explore career options.
 
 Key Features:
@@ -10,14 +11,15 @@ Clone the repository:
 git clone https://github.com/Devanandfarkade/CareerHorizon.git
 
 Install dependancies:
-1) npm install
-2) npm i express
-3) npm i nodemon
-4) npm i color
-5) npm i dotenv
-6) npm i mongoose
-7) npm i bcrypt
-8)npm install jsonwebtoken
+
+1. npm install
+2. npm i express
+3. npm i nodemon
+4. npm i color
+5. npm i dotenv
+6. npm i mongoose
+7. npm i bcrypt
+8. npm install jsonwebtoken
 
 Set up environment variables:
 PORT = 8080,
@@ -33,10 +35,10 @@ npm run dev
 Folder structure:
 
 Kaam Dhanda/
-|--config/  db.js
-|-- models/  user.js
-|-- node_modules/ 
-|--public/  html,css,js,images/videos
+|--config/ db.js
+|-- models/ user.js
+|-- node_modules/
+|--public/ html,css,js,images/videos
 |-- .env/
 |-- .gitignore/
 |-- package.json
