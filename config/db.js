@@ -4,7 +4,7 @@ require("colors"); // Import colors package
 
 // Database configuration
 const dbConfig = {
-  uri: process.env.MONGO_URI, // Read from .env file
+  uri: process.env.MONGO_ATLAS_URL, // Read from .env file
   options: {
     useNewUrlParser: true,
     useUnifiedTopology: true,
